@@ -43,23 +43,24 @@
                 <dd class="date-created">28 Jun 2020</dd>
               </dl>
             </div>
-            <button class="sns-share-btn" aria-label="SNS share" aria-expanded="false">
+            <button type="button" class="sns-share-btn non-actived" aria-label="SNS share" aria-expanded="false">
+              <img class="filter-gray" src="./images/icon-share.svg" />
             </button>
-            <div class="sns-share-container">
+            <div class="sns-share-container hidden">
               <span class="sns-share-title">SHARE</span>
               <ul class="sns-links">
                 <li>
-                  <button>
+                  <button type="button">
                     <img class="sns-icon" src="./images/icon-facebook.svg" alt="facebook"/>
                   </button>
                 </li>
                 <li>
-                  <button>
+                  <button type="button">
                     <img class="sns-icon" src="./images/icon-twitter.svg" alt="twitter"/>
                   </button>
                 </li>
                 <li>
-                  <button>
+                  <button type="button">
                     <img class="sns-icon" src="./images/icon-pinterest.svg" alt="pinterest"/>
                   </button>
               </li>
@@ -71,4 +72,5 @@
     </article>
   </main>
 </body>
+<script src="./sns-share.js"></script>
 </html>

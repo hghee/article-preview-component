@@ -14,6 +14,35 @@
   left: -999;
 }
 
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: flex;
+}
+
+.non-actived {
+  background-color: #ECF2F8;
+}
+
+.actived {
+  background-color: #6E8098;
+}
+
+.filter-white {
+  filter: invert(100%) sepia(73%) saturate(2%) hue-rotate(291deg) brightness(122%) contrast(101%);
+}
+
+.filter-gray {
+  filter: invert(52%) sepia(9%) saturate(958%) hue-rotate(175deg) brightness(93%) contrast(96%);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -104,20 +133,16 @@ main {
 
 .sns-share-btn {
   z-index: 5;
-  cursor: pointer;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
-  border: none;
   border-radius: 50%;
-  background-image: url(./images/icon-share.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .sns-share-container {
   z-index: 4;
-  display: flex;
   align-items: center;
   position: absolute;
   /* article-container - relative */
@@ -212,7 +237,6 @@ main {
     width: 248px;
     height: 56px;
     border-radius: 10px;
-    display: flex; 
     justify-content: center;
     align-items: center;
     position: absolute;
